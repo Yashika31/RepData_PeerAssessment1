@@ -28,6 +28,9 @@ hist(totalSteps$steps,
 meanSteps <- mean(totalSteps$steps, na.rm = TRUE)
 medSteps <- median(totalSteps$steps, na.rm = TRUE)
 
+Mean Number of Steps Taken per Day = 1.076618910^{4}
+Median Number of Steps Taken per Day = 10765
+
 ## What is the average daily activity pattern?
 
 # Make a time-series plot of the 5-minute interval and the average number of
@@ -50,6 +53,7 @@ maxInt <- meanStepsByInt[which.max(meanStepsByInt$steps),]
 missingVals <- is.na(activityData$steps)
 
 # Devise a strategy for filling in all of the missing values
+There are 17568 missing values. I will replace these missing values with the 5-day average of that respective interval.
 
 # Create a new dataset that is equal to the original dataset but with 
 # the missing data filled in.
@@ -72,6 +76,7 @@ diffMean = impMeanSteps - meanSteps
 diffMed = impMedSteps - medSteps
 diffTotal = sum(impStepsByInt$steps) - sum(totalSteps$steps)
 
+There is a difference of 0 in the mean steps of the two dataset. There is a difference of -1.076381110^{4} in the median steps of the two dataset. There is a difference of 8.612950910^{4} in the total steps of the two dataset.
 
 ## Are there differences in activity patterns between weekdays and weekends?
 
