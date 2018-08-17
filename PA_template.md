@@ -95,7 +95,7 @@ text(x = 0,y=mean(total_day$total_steps),pos=1,labels = "mean",col="red")
 ```
 
 
-![plot of chunk barplot](figure/barplot-1.png) 
+![plot of chunk barplot](instructions_fig/barplot-1.png) 
 
 ####  2. Make a histogram of the total number of steps taken each day
 
