@@ -94,6 +94,7 @@ text(x = 0,y=median(total_day$total_steps),pos=3,labels = "median")
 text(x = 0,y=mean(total_day$total_steps),pos=1,labels = "mean",col="red")
 ```
 
+
 ![plot of chunk barplot](figure/barplot-1.png) 
 
 ####  2. Make a histogram of the total number of steps taken each day
