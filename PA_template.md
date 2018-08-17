@@ -108,7 +108,7 @@ abline(v=median(total_day$total_steps),lty=3, lwd=2, col="black")
 legend(legend="median","topright",lty=3,lwd=2,bty = "n")
 ```
 
-![plot of chunk histogram](figure/histogram-1.png) 
+![plot of chunk histogram](instructions_fig/histogram-1.png) 
 
 #### 3. Calculate and report the mean and median of the total number of steps taken per day
 
@@ -134,7 +134,7 @@ axis(1,labels=daily_patterns$interval[seq(1,288,12)],
      at = seq_along(daily_patterns$interval)[seq(1,288,12)])
 ```
 
-![plot of chunk daily](figure/daily-1.png) 
+![plot of chunk daily](instructions_fig/daily-1.png) 
 
 #### 2. Which 5-minute interval, on average across all the days in the dataset, contains the maximum number of steps?
 
@@ -223,7 +223,7 @@ abline(v=median(total_day$total_steps),lty=3, lwd=2, col="black")
 legend(legend="median","topright",lty=3,lwd=2,bty = "n")
 ```
 
-![plot of chunk histogram_no_NAs](figure/histogram_no_NAs-1.png) 
+![plot of chunk histogram_no_NAs](instructions_fig/histogram_no_NAs-1.png) 
 
 
 ```r
@@ -272,4 +272,4 @@ daily_patterns <- activity_without_NAs %>% mutate(day=factor(day,levels=c("weeke
 qplot(interval,average,data=daily_patterns,geom="line",facets=day~.)
 ```
 
-![plot of chunk weekend_comparison](figure/weekend_comparison-1.png) 
+![plot of chunk weekend_comparison](instructions_fig/weekend_comparison-1.png) 
